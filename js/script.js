@@ -71,7 +71,7 @@ hitungButtonLuas.addEventListener("click", function () {
     document.querySelector(".hasil-perhitungan").textContent = "Masukkan Nilai Positif!";
     document.querySelector(".hasil-perhitungan").style.color = "red";
   } else if (sisiLuas == 0) {
-    document.querySelector(".hasil-perhitungan").textContent = "Silahkan Masukkan Nilai Lebih dari Nol!";
+    document.querySelector(".hasil-perhitungan").textContent = "Masukkan Nilai Lebih Besar Dari Nol!";
     document.querySelector(".hasil-perhitungan").style.color = "red";
   } else {
     document.querySelector(".hasil-perhitungan").textContent = "Nilai Yang Anda Masukkan Tidak Ada.";
@@ -98,7 +98,7 @@ hitungButtonKeliling.addEventListener("click", function () {
     document.querySelector(".hasil-perhitungan-keliling").textContent = "Masukkan Nilai Positif!";
     document.querySelector(".hasil-perhitungan-keliling").style.color = "red";
   } else if (sisiKeliling == 0) {
-    document.querySelector(".hasil-perhitungan-keliling").textContent = "Silahkan Masukkan Nilai Lebih dari Nol!";
+    document.querySelector(".hasil-perhitungan-keliling").textContent = "Masukkan Nilai Lebih Besar Dari Nol!";
     document.querySelector(".hasil-perhitungan-keliling").style.color = "red";
   } else {
     document.querySelector(".hasil-perhitungan-keliling").textContent = "Nilai Yang Anda Masukkan Tidak Ada.";
