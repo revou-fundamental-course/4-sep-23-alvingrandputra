@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- WEBSITE TITLE -->
+    <title>Website Kalkulator Persegi</title>
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- FAVICON TAB LOGO -->
+    <link rel="icon" href="img/math-icon.png" />
+    <!-- FONTS GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,200&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADER NAVBAR -->
+    <header class="navbar">
+      <div class="navbar-content">
+        <h1 class="navbar-title">Selamat Datang Di <span>KalPer</span></h1>
+        <p>Halo Semuanya, Selamat Datang di KalPer / Kalkulator Persegi yang berfungsi untuk menghitung luas dan keliling bangun datar persegi</p>
+      </div>
+    </header>
+
+    <!-- TOMBOL LUAS DAN KELILING PERSEGI-->
+    <section class="hitung-persegi">
+      <div class="buttons">
+        <button class="luas-button">Luas</button>
+        <button class="keliling-button">Keliling</button>
+      </div>
+    </section>
+
+    <!-- RUMUS LUAS PERSEGI SECTION -->
+    <section class="rumus-persegi-luas">
+      <div class="row">
+        <div class="bagian-persegi">
+          <div class="persegi"></div>
+
+          <p class="bagiana">A</p>
+          <p class="bagianb">B</p>
+          <p class="bagianc">C</p>
+          <p class="bagiand">D</p>
+
+          <p class="bagiane">Bujur Sangkar</p>
+        </div>
+        <div class="rumus">
+          <h1>Rumus Luas Persegi yaitu :</h1>
+          <p class="bolder">L = S x S</p>
+          <div class="satuan-rumus">
+            <p>Dimana :</p>
+            <p><b>L</b> = Keliling</p>
+            <p><b>S</b> = Sisi</p>
+          </div>
+        </div>
+        <p class="hasil-perhitungan"></p>
+        <!-- INPUT SISI PERSEGI -->
+        <section id="luaskelilingInputSection">
+          <label class="input-label" for="inputFieldLuas"><p>Hitung Luas Persegi</p></label>
+          <input type="number" id="inputFieldLuas" placeholder="Masukkan Sisi" />
+        </section>
+        <!-- HITUNG DAN RESET BUTTON LUAS -->
+        <section class="inputButtonSection">
+          <button id="hitungButtonLuas">Hitung</button>
+          <button id="resetButtonLuas">Reset</button>
+        </section>
+      </div>
+    </section>
+
+    <!-- RUMUS KELILING PERSEGI SECTION -->
+    <section class="rumus-persegi-keliling">
+      <div class="row">
+        <div class="bagian-persegi">
+          <div class="persegi"></div>
+          <p class="bagiana">A</p>
+          <p class="bagianb">B</p>
+          <p class="bagianc">C</p>
+          <p class="bagiand">D</p>
+
+          <p class="bagiane">Bujur Sangkar</p>
+        </div>
+        <div class="rumus">
+          <h1>Rumus Keliling Persegi yaitu :</h1>
+          <p class="bolder">K = S x S x S</p>
+          <div class="satuan-rumus">
+            <p>Dimana :</p>
+            <p><b>K</b> = Keliling</p>
+            <p><b>S</b> = Sisi</p>
+          </div>
+        </div>
+        <p class="hasil-perhitungan-keliling"></p>
+        <!-- INPUT SISI PERSEGI -->
+
+        <section id="luaskelilingInputSection">
+          <label class="input-label" for="inputFieldKeliling"><p>Hitung Keliling Persegi</p></label>
+          <input type="number" id="inputFieldKeliling" placeholder="Masukkan Sisi" />
+        </section>
+        <!-- HITUNG DAN RESET BUTTON KELILING -->
+        <section class="inputButtonSection">
+          <button id="hitungButtonKeliling">Hitung</button>
+          <button id="resetButtonKeliling">Reset</button>
+        </section>
+      </div>
+    </section>
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div>
+        <p>Created By <a href="https://instagram.com/alvingrandp?igshid=NGVhN2U2NjQ0Yg==" target="_blank">Alvin Grand Putra</a> | &copy; 2023.</p>
+      </div>
+    </footer>
+
+    <!-- MY JAVASCRIPT -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

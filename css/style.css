@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  text-align: center;
+  padding: 10px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: #101f71;
+  align-items: center;
+}
+.navbar .navbar-title {
+  font-size: 20px;
+  color: #fff;
+}
+.navbar .navbar-title span {
+  color: yellow;
+}
+.navbar .navbar-content p {
+  font-size: 12px;
+  color: #fff;
+}
+
+/* HITUNG PERSEGI */
+.hitung-persegi {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* RUMUS LUAS PERSEGI1 SECTION */
+.rumus-persegi-luas {
+  transition: 0.5s;
+  display: flex;
+  margin: 5px;
+}
+.rumus-persegi-luas .row {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.rumus-persegi-luas .row .bagian-persegi {
+  height: 160px;
+  position: relative;
+  justify-content: center;
+  margin: auto;
+}
+.rumus-persegi-luas .row .bagian-persegi .persegi {
+  right: 50%;
+  left: 50%;
+  transform: translateX(-50px);
+  position: absolute;
+  border: 2px solid red;
+  height: 100px;
+  width: 100px;
+}
+
+.rumus-persegi-luas .row .bagian-persegi .bagiana {
+  position: absolute;
+  left: 44%;
+  top: 0;
+}
+.rumus-persegi-luas .row .bagian-persegi .bagianb {
+  position: absolute;
+  right: 44%;
+  top: 0;
+}
+.rumus-persegi-luas .row .bagian-persegi .bagianc {
+  position: absolute;
+  left: 44%;
+  bottom: 60px;
+}
+.rumus-persegi-luas .row .bagian-persegi .bagiand {
+  position: absolute;
+  right: 44%;
+  bottom: 60px;
+}
+.rumus-persegi-luas .row .bagian-persegi .bagiane {
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  right: 50%;
+  left: 50%;
+  bottom: 8px;
+  transform: translateX(-50px);
+}
+
+.rumus-persegi-luas .row .rumus {
+  margin-top: 20px;
+  margin-left: 200px;
+}
+.rumus-persegi-luas .row .rumus .satuan-rumus {
+  margin-top: 5px;
+}
+
+.rumus-persegi-luas .row .rumus h1 {
+  font-size: 16px;
+}
+.rumus-persegi-luas .row .rumus .bolder {
+  font-weight: bold;
+}
+.rumus-persegi-luas .row .hasil-perhitungan {
+  text-align: center;
+  color: #101f71;
+}
+
+/* RUMUS KELILING PERSEGI SECTION */
+.rumus-persegi-keliling {
+  transition: 0.5s;
+  display: flex;
+  margin: 5px;
+}
+.rumus-persegi-keliling .row {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.rumus-persegi-keliling .row .bagian-persegi {
+  height: 160px;
+  position: relative;
+  justify-content: center;
+  margin: auto;
+}
+.rumus-persegi-keliling .row .bagian-persegi .persegi {
+  right: 50%;
+  left: 50%;
+  transform: translateX(-50px);
+  position: absolute;
+  border: 2px solid red;
+  height: 100px;
+  width: 100px;
+}
+.rumus-persegi-keliling .row .bagian-persegi {
+  position: relative;
+}
+.rumus-persegi-keliling .row .bagian-persegi .bagiana {
+  position: absolute;
+  left: 44%;
+  top: 0;
+}
+.rumus-persegi-keliling .row .bagian-persegi .bagianb {
+  position: absolute;
+  right: 44%;
+  top: 0;
+}
+.rumus-persegi-keliling .row .bagian-persegi .bagianc {
+  position: absolute;
+  left: 44%;
+  bottom: 60px;
+}
+.rumus-persegi-keliling .row .bagian-persegi .bagiand {
+  position: absolute;
+  right: 44%;
+  bottom: 60px;
+}
+.rumus-persegi-keliling .row .bagian-persegi .bagiane {
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  right: 50%;
+  left: 50%;
+  bottom: 8px;
+  transform: translateX(-50px);
+}
+
+.rumus-persegi-keliling .row .rumus {
+  margin-top: 20px;
+  margin-left: 200px;
+}
+
+.rumus-persegi-keliling .row .rumus h1 {
+  font-size: 16px;
+}
+.rumus-persegi-keliling .row .rumus .satuan-rumus {
+  margin-top: 5px;
+}
+.rumus-persegi-keliling .row .rumus .bolder {
+  font-weight: bold;
+}
+.rumus-persegi-keliling .row .hasil-perhitungan-keliling {
+  text-align: center;
+  color: #101f71;
+}
+/* FORM INPUT LUAS DAN KELILING*/
+#luaskelilingInputSection {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#luaskelilingInputSection .input-label {
+  text-align: center;
+  font-size: 12px;
+  height: 30px;
+  margin: 5px;
+  color: #101f71;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+input {
+  width: 200px;
+  margin: 0 auto;
+  padding: 6px;
+  border: 1px solid #101f71;
+  border-radius: 4px;
+  outline: none;
+}
+input:focus {
+  border-color: #00b3ff;
+}
+
+/* HITUNG DAN RESET BUTTON SECTION */
+
+.inputButtonSection {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  margin: 0 5px;
+  border-radius: 4px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #101f71;
+  color: yellow;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: yellow;
+  color: #101f71;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+/* FOOTER SECTION */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #101f71;
+  color: #fff;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+footer div p {
+  font-weight: bold;
+}
+footer div p a {
+  cursor: pointer;
+  text-decoration: none;
+  color: yellow;
+}
+footer div p a:hover {
+  color: #c4c40b;
+}
+footer div p a:active {
+  color: yellow;
+}
+/* MEDIA QUERIES */
+
+/* STYLE UNTUK LAPTOP */
+@media (max-width: 1024px) {
+  /* NAVBAR  */
+  .navbar .navbar-content p {
+    margin-top: -5px;
+    font-size: 10px;
+    color: #fff;
+  }
+  .navbar .navbar-title {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #fff;
+  }
+  /* RUMUS LUAS PERSEGI */
+  .rumus-persegi-luas .row .bagian-persegi .bagiana {
+    position: absolute;
+    left: 40%;
+    top: 0;
+  }
+  .rumus-persegi-luas .row .bagian-persegi .bagianb {
+    position: absolute;
+    right: 40%;
+    top: 0;
+  }
+  .rumus-persegi-luas .row .bagian-persegi .bagianc {
+    position: absolute;
+    left: 40%;
+    bottom: 60px;
+  }
+  .rumus-persegi-luas .row .bagian-persegi .bagiand {
+    position: absolute;
+    right: 40%;
+    bottom: 60px;
+  }
+
+  .rumus-persegi-luas .row .rumus {
+    margin-bottom: 35px;
+    margin-left: 40px;
+  }
+  /* RUMUS KELILING PERSEGI  */
+  .rumus-persegi-keliling .row .bagian-persegi .bagiana {
+    position: absolute;
+    left: 40%;
+    top: 0;
+  }
+  .rumus-persegi-keliling .row .bagian-persegi .bagianb {
+    position: absolute;
+    right: 40%;
+    top: 0;
+  }
+  .rumus-persegi-keliling .row .bagian-persegi .bagianc {
+    position: absolute;
+    left: 40%;
+    bottom: 60px;
+  }
+  .rumus-persegi-keliling .row .bagian-persegi .bagiand {
+    position: absolute;
+    right: 40%;
+    bottom: 60px;
+  }
+  .rumus-persegi-keliling .row .rumus {
+    margin-bottom: 35px;
+    margin-left: 40px;
+  }
+}
+
+/* UNTUK TABLET */
+/* RUMUS LUAS PERSEGI  */
+@media (max-width: 768px) {
+  .rumus-persegi-luas .row .bagian-persegi .bagiana {
+    position: absolute;
+    left: 38%;
+    top: 0;
+  }
+  .rumus-persegi-luas .row .bagian-persegi .bagianb {
+    position: absolute;
+    right: 38%;
+    top: 0;
+  }
+  .rumus-persegi-luas .row .bagian-persegi .bagianc {
+    position: absolute;
+    left: 38%;
+    bottom: 60px;
+  }
+  .rumus-persegi-luas .row .bagian-persegi .bagiand {
+    position: absolute;
+    right: 38%;
+    bottom: 60px;
+  }
+  .rumus-persegi-luas .row .rumus {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  /* RUMUS KELILING PERSEGI  */
+  .rumus-persegi-keliling .row .bagian-persegi .bagiana {
+    position: absolute;
+    left: 38%;
+    top: 0;
+  }
+  .rumus-persegi-keliling .row .bagian-persegi .bagianb {
+    position: absolute;
+    right: 38%;
+    top: 0;
+  }
+  .rumus-persegi-keliling .row .bagian-persegi .bagianc {
+    position: absolute;
+    left: 38%;
+    bottom: 60px;
+  }
+  .rumus-persegi-keliling .row .bagian-persegi .bagiand {
+    position: absolute;
+    right: 38%;
+    bottom: 60px;
+  }
+
+  /* STYLE UNTUK SMARTPHONE*/
+  @media (max-width: 480px) {
+    /* NAVBAR */
+    .navbar {
+      padding: 20px;
+    }
+    .navbar .navbar-content p {
+      font-size: 10px;
+      color: #fff;
+    }
+    .navbar .navbar-title {
+      margin-bottom: 12px;
+      font-size: 15px;
+      color: #fff;
+    }
+
+    /* RUMUS LUAS PERSEGI */
+    .rumus-persegi-luas .row .rumus {
+      margin-left: 15px;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+
+    .rumus-persegi-luas .row .hasil-perhitungan {
+      margin-top: 30px;
+    }
+    .rumus-persegi-luas .row .bagian-persegi .bagiana {
+      position: absolute;
+      left: 33%;
+      top: 0;
+    }
+    .rumus-persegi-luas .row .bagian-persegi .bagianb {
+      position: absolute;
+      right: 33%;
+      top: 0;
+    }
+    .rumus-persegi-luas .row .bagian-persegi .bagianc {
+      position: absolute;
+      left: 33%;
+      bottom: 60px;
+    }
+    .rumus-persegi-luas .row .bagian-persegi .bagiand {
+      position: absolute;
+      right: 33%;
+      bottom: 60px;
+    }
+    .rumus-persegi-luas .row .hasil-perhitungan {
+      font-size: 14px;
+    }
+
+    /* RUMUS KELILING PERSEGI */
+    .rumus-persegi-keliling .row .bagian-persegi .bagiana {
+      position: absolute;
+      left: 33%;
+      top: 0;
+    }
+    .rumus-persegi-keliling .row .bagian-persegi .bagianb {
+      position: absolute;
+      right: 33%;
+      top: 0;
+    }
+    .rumus-persegi-keliling .row .bagian-persegi .bagianc {
+      position: absolute;
+      left: 33%;
+      bottom: 60px;
+    }
+    .rumus-persegi-keliling .row .bagian-persegi .bagiand {
+      position: absolute;
+      right: 33%;
+      bottom: 60px;
+    }
+    .rumus-persegi-keliling .row .rumus {
+      margin-left: 15px;
+    }
+    .rumus-persegi-keliling .row .hasil-perhitungan-keliling {
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  }
+}
