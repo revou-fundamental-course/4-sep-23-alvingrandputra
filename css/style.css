@@ -18,6 +18,8 @@ body {
   align-items: center;
 }
 .navbar .navbar-title {
+  margin-bottom: 2px;
+  margin-top: -5px;
   font-size: 20px;
   color: #fff;
 }
@@ -27,6 +29,10 @@ body {
 .navbar .navbar-content p {
   font-size: 12px;
   color: #fff;
+}
+.navbar .navbar-content p span {
+  font-weight: bold;
+  color: yellow;
 }
 
 /* HITUNG PERSEGI */
@@ -350,22 +356,22 @@ footer div p a:active {
 @media (max-width: 768px) {
   .rumus-persegi-luas .row .bagian-persegi .bagiana {
     position: absolute;
-    left: 38%;
+    left: 36%;
     top: 0;
   }
   .rumus-persegi-luas .row .bagian-persegi .bagianb {
     position: absolute;
-    right: 38%;
+    right: 36%;
     top: 0;
   }
   .rumus-persegi-luas .row .bagian-persegi .bagianc {
     position: absolute;
-    left: 38%;
+    left: 36%;
     bottom: 60px;
   }
   .rumus-persegi-luas .row .bagian-persegi .bagiand {
     position: absolute;
-    right: 38%;
+    right: 36%;
     bottom: 60px;
   }
   .rumus-persegi-luas .row .rumus {
@@ -376,22 +382,22 @@ footer div p a:active {
   /* RUMUS KELILING PERSEGI  */
   .rumus-persegi-keliling .row .bagian-persegi .bagiana {
     position: absolute;
-    left: 38%;
+    left: 36%;
     top: 0;
   }
   .rumus-persegi-keliling .row .bagian-persegi .bagianb {
     position: absolute;
-    right: 38%;
+    right: 36%;
     top: 0;
   }
   .rumus-persegi-keliling .row .bagian-persegi .bagianc {
     position: absolute;
-    left: 38%;
+    left: 36%;
     bottom: 60px;
   }
   .rumus-persegi-keliling .row .bagian-persegi .bagiand {
     position: absolute;
-    right: 38%;
+    right: 36%;
     bottom: 60px;
   }
 
