@@ -14,8 +14,8 @@ const storedState = localStorage.getItem("calculatorState");
 
 // DEFINE KONDISI AWAL KETIKA TIDAK ADA DATA
 const defaultState = {
-  luasButtonVisible: false,
-  kelilingButtonVisible: true,
+  luasButtonVisible: true,
+  kelilingButtonVisible: false,
   inputLabelText: "Hitung Luas Persegi",
 };
 
