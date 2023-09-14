@@ -25,8 +25,8 @@ const currentState = storedState ? JSON.parse(storedState) : defaultState;
 // UPDATE TAMPILAN KETIKA DIUBAH
 function updateUI() {
   if (currentState.luasButtonVisible) {
-    kelilingpersegi.style.display = "none";
     luaspersegi.style.display = "flex";
+    kelilingpersegi.style.display = "none";
   } else if (currentState.kelilingButtonVisible) {
     luaspersegi.style.display = "none";
     kelilingpersegi.style.display = "flex";
@@ -34,7 +34,7 @@ function updateUI() {
   inputlabel.innerHTML = currentState.inputLabelText;
 }
 
-// OEMANGGILAN FUNGSI
+// PEMANGGILAN FUNGSI
 updateUI();
 
 // KETIKA TOMBOL LUAS DI KLIK
