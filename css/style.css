@@ -39,7 +39,7 @@ body {
 .hitung-persegi {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 /* RUMUS LUAS PERSEGI1 SECTION */
@@ -405,6 +405,10 @@ footer div p a:active {
 
   /* STYLE UNTUK SMARTPHONE*/
   @media (max-width: 480px) {
+    body {
+      height: 100vh;
+      position: relative;
+    }
     /* NAVBAR */
     .navbar {
       padding: 20px;
@@ -479,6 +483,12 @@ footer div p a:active {
     .rumus-persegi-keliling .row .hasil-perhitungan-keliling {
       margin-top: 30px;
       font-size: 14px;
+    }
+    footer {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
     }
   }
 }
