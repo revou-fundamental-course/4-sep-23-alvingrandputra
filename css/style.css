@@ -237,6 +237,7 @@ input:focus {
   margin: 5px;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 button {
@@ -353,7 +354,7 @@ footer div p a:active {
   }
 }
 
-/* UNTUK TABLET */
+/* STYLE UNTUK TABLET */
 /* RUMUS LUAS PERSEGI  */
 @media (max-width: 768px) {
   .rumus-persegi-luas .row .bagian-persegi .bagiana {
@@ -418,6 +419,10 @@ footer div p a:active {
       font-size: 15px;
       color: #fff;
     }
+    /* HITUNG PERSEGI */
+    .hitung-persegi {
+      margin-top: 80px;
+    }
 
     /* RUMUS LUAS PERSEGI */
     .rumus-persegi-luas .row .hasil-perhitungan {
@@ -479,6 +484,10 @@ footer div p a:active {
     .rumus-persegi-keliling .row .hasil-perhitungan-keliling {
       margin-top: 30px;
       font-size: 14px;
+    }
+    /* HITUNG DAN RESET BUTTON SECTION */
+    .inputButtonSection {
+      margin-bottom: 100px;
     }
   }
 }
